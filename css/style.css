@@ -1,0 +1,149 @@
+html {
+    --dark-color: #631672;
+    --very-low: #00cccc;
+    --low: #66cc33;
+    --moderate: #ff9900;
+    --high: #ff3300;
+    --very-high: #ff3399;
+    --daytime: linear-gradient(to right, rgb(18, 20, 175), rgb(10, 83, 167));
+    --nighttime: linear-gradient(to right, rgb(66, 140, 209), rgb(19, 77, 163));
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: var(--dark-color);
+}
+
+.searchInput {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.searchIcon {
+    padding: 10px;
+}
+
+#searchHistory {
+    height: auto;
+}
+
+.sliderItem {
+    padding: 10px
+}
+
+.cityChips {
+    margin-left: 10px;
+}
+
+.cityChip {
+    border-radius: 15px;
+    padding-right: 8px;
+}
+
+.closeBtn {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 3px;
+    margin-left: 8px;
+    background-color: #c0c0c0;
+}
+
+.defaultText {
+    font-size: 18px;
+    color: #070707
+}
+
+#todayWeather {
+    background-image: linear-gradient(to right, rgb(116, 203, 253), rgb(141, 53, 255)); /* Daytime */
+    /* background-image: linear-gradient(to right, rgb(63, 186, 190), rgb(99, 145, 212)) Nighttime */
+}
+
+.todayWeatherSection {
+    padding: 10px 20px;
+    min-height: 240px;
+}
+
+.tempVal {
+    color: #f2f2f2;
+    text-shadow: 1px 1px 0 #070707;
+}
+
+.tempUnit {
+    line-height: 1.4;
+    color: #f2f2f2;
+}
+
+#fiveDayForecast {
+    padding-top: 30px;
+}
+
+.forecastCardWrapper {
+    margin-bottom: 20px;
+}
+
+.forecastCard {
+    padding: 20px 10px;
+    border-radius: 8px;
+    background-color: var(--dark-color);
+}
+
+.forecastDate {
+    margin-bottom: 10px;
+}
+
+.otherInfo {
+    margin-top: 10px;
+}
+
+.uvIndex {
+    color: var(--very-low);
+    padding: 2px 10px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+
+
+/* For smaller screens */
+@media only screen and (max-width: 639px) {
+    header {
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #headerNav {
+        padding: 0 10px;
+    }
+
+    #logoType {
+        margin-left: 6%;
+        margin-top: -10px;
+    }
+
+    #searchForm {
+        margin-left: 30px;
+    }
+
+    #logoWrapper {
+        height: 40px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #headerSearchBar {
+        padding: 0;
+    }
+
+    .weatherGraphic {
+        padding: 0;
+    }
+}
